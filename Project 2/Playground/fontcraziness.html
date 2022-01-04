@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .badsize {
+            font-size:  48px;
+        }
+
+        .goodsize {
+            font-size: 3rem; 
+            /*rem or em is X-times bigger than default (16px) size
+            px would be static while rem would be relative
+            also always think about visually impared users*/
+        }
+
+        .mybox{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <p class="badsize">Daniel Scott</p>    
+    <p class="goodsize">Daniel Scott</p>
+    <p>Daniel Scott</p>
+
+    <div class="mybox">
+        <p class="goodsize">Pickle</p> 
+        <!-- this would be 3rem  -->
+    </div>
+</body>
+</html>
